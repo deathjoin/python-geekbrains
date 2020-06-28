@@ -9,7 +9,7 @@ numbers = [1, 2, 3, 4, -3, -100, 5, 6, 0]
 
 
 def my_sqrt(numbers):
-    return [num * num for num in numbers]
+    return [num*num if num > 0 else num for num in numbers]
 
 
 print(numbers)
